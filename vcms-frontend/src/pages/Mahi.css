@@ -1,0 +1,338 @@
+.mahi-floating-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    height: 58px;
+    min-width: 110px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #1e88e5;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+    z-index: 9999;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.mahi-floating-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.mahi-icon {
+    font-size: 24px;
+}
+
+.mahi-button-text {
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   CHAT WINDOW
+===================================================== */
+
+.mahi-chat-window {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 370px;
+    height: 570px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 10000;
+
+    border: 1px solid #e1e1e1;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.mahi-header {
+    height: 72px;
+
+    padding: 0 18px;
+
+    background: #1e88e5;
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mahi-header-info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.mahi-avatar {
+    width: 43px;
+    height: 43px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+}
+
+.mahi-header h3 {
+    margin: 0;
+
+    font-size: 18px;
+}
+
+.mahi-header span {
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 12px;
+
+    opacity: 0.85;
+}
+
+.mahi-close-button {
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    line-height: 1;
+}
+
+
+/* =====================================================
+   CHAT MESSAGES
+===================================================== */
+
+.mahi-messages {
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 18px;
+
+    background: #f5f7fa;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.mahi-message-row {
+    display: flex;
+
+    justify-content: flex-start;
+}
+
+.user-row {
+    justify-content: flex-end;
+}
+
+.mahi-message {
+    max-width: 80%;
+
+    padding: 11px 14px;
+
+    border-radius: 15px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    word-wrap: break-word;
+}
+
+.bot-message {
+    background: white;
+
+    color: #222;
+
+    border-bottom-left-radius: 4px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.user-message {
+    background: #1e88e5;
+
+    color: white;
+
+    border-bottom-right-radius: 4px;
+}
+
+
+/* =====================================================
+   QUICK QUESTIONS
+===================================================== */
+
+.mahi-quick-questions {
+    padding: 8px 12px;
+
+    display: flex;
+
+    gap: 6px;
+
+    overflow-x: auto;
+
+    background: white;
+
+    border-top: 1px solid #eeeeee;
+}
+
+.mahi-quick-questions button {
+    flex-shrink: 0;
+
+    border: 1px solid #1e88e5;
+
+    background: white;
+
+    color: #1e88e5;
+
+    border-radius: 18px;
+
+    padding: 7px 11px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.mahi-quick-questions button:hover {
+    background: #1e88e5;
+
+    color: white;
+}
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.mahi-input-area {
+    padding: 12px;
+
+    display: flex;
+
+    gap: 8px;
+
+    background: white;
+
+    border-top: 1px solid #eeeeee;
+}
+
+.mahi-input-area input {
+    flex: 1;
+
+    min-width: 0;
+
+    border: 1px solid #d5d5d5;
+
+    border-radius: 22px;
+
+    padding: 11px 15px;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+.mahi-input-area input:focus {
+    border-color: #1e88e5;
+}
+
+.mahi-send-button {
+    width: 43px;
+    height: 43px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #1e88e5;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.mahi-send-button:hover {
+    opacity: 0.9;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .mahi-chat-window {
+        right: 10px;
+        bottom: 10px;
+
+        width: calc(100vw - 20px);
+
+        height: calc(100vh - 20px);
+
+        max-height: 650px;
+
+        border-radius: 16px;
+    }
+
+    .mahi-floating-button {
+        right: 15px;
+        bottom: 15px;
+    }
+}
