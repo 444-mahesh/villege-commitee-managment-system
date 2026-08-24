@@ -5,6 +5,8 @@ A full-stack web application developed to digitally manage village committees, m
 The system provides a web-based interface for managing village committee activities and helps organize community-related information in a structured manner.
 
 ---
+<img width="1917" height="1080" alt="image" src="https://github.com/user-attachments/assets/96f410a3-b712-4ecd-a4d9-d910070c69ef" />
+
 
 ## 📌 Project Overview
 
