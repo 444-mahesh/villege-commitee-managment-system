@@ -1,0 +1,15 @@
+### Create User
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "name": "Ravi Kumar",
+  "email": "ravi@gmail.com",
+  "phone": "9876543210",
+  "address": "Chennai",
+  "role": "Member"
+}
+
+
+### Get All Users
+GET http://localhost:8080/api/users

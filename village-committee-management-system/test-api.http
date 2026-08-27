@@ -1,0 +1,35 @@
+### Create User
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "name": "Rahul",
+  "email": "rahul@gmail.com",
+  "phone": "9876543210",
+  "address": "Chennai",
+  "role": "President"
+}
+
+###
+
+### Get All Users
+GET http://localhost:8080/api/users
+
+###
+
+### Update User
+PUT http://localhost:8080/api/users/1
+Content-Type: application/json
+
+{
+  "name": "Rahul Updated",
+  "email": "rahulupdated@gmail.com",
+  "phone": "9999999999",
+  "address": "Vellore",
+  "role": "Secretary"
+}
+
+###
+
+### Delete User
+DELETE http://localhost:8080/api/users/1
